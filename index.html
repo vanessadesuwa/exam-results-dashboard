@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SPIK - Student Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="dashboard">
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <div class="logo">
+          <div class="logo-icon">🌸</div>
+          <span class="logo-text">SPIK</span>
+        </div>
+
+        <nav class="nav">
+          <div class="nav-section">
+            <div class="nav-item">
+              <span class="nav-item-icon">🏠</span>
+              <span>Home</span>
+            </div>
+            <div class="nav-subsection">
+              <div class="nav-subitem">Admin</div>
+              <div class="nav-subitem active">Students</div>
+              <div class="nav-subitem">Teachers</div>
+            </div>
+          </div>
+
+          <div class="nav-section">
+            <div class="nav-item">
+              <span class="nav-item-icon">👥</span>
+              <span>Students</span>
+            </div>
+            <div class="nav-item">
+              <span class="nav-item-icon">👨‍🏫</span>
+              <span>Teachers</span>
+            </div>
+            <div class="nav-item">
+              <span class="nav-item-icon">📚</span>
+              <span>Library</span>
+            </div>
+            <div class="nav-item">
+              <span class="nav-item-icon">👤</span>
+              <span>Account</span>
+            </div>
+            <div class="nav-item">
+              <span class="nav-item-icon">📖</span>
+              <span>Class</span>
+            </div>
+            <div class="nav-item">
+              <span class="nav-item-icon">📝</span>
+              <span>Subject</span>
+            </div>
+            <div class="nav-item">
+              <span class="nav-item-icon">⏰</span>
+              <span>Routine</span>
+            </div>
+            <div class="nav-item">
+              <span class="nav-item-icon">📊</span>
+              <span>Attendance</span>
+            </div>
+            <div class="nav-item">
+              <span class="nav-item-icon">📄</span>
+              <span>Exam</span>
+            </div>
+            <div class="nav-item">
+              <span class="nav-item-icon">🔔</span>
+              <span>Notice</span>
+            </div>
+          </div>
+        </nav>
+      </aside>
+
+      <!-- Main Content -->
+      <main class="main-content">
+        <!-- Header -->
+        <header class="header">
+          <div class="search-bar">
+            <span>🔍</span>
+            <input type="text" placeholder="What do you want to find?" />
+          </div>
+          <div class="header-actions">
+            <button class="icon-btn">🔔</button>
+            <button class="icon-btn">💬</button>
+            <div class="user-profile">
+              <img
+                src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop"
+                alt="User"
+                class="user-avatar"
+              />
+              <div class="user-info">
+                <div class="user-name">Priscilla Lily</div>
+                <div class="user-role">Admin</div>
+              </div>
+              <span>▼</span>
+            </div>
+          </div>
+        </header>
+
+        <!-- Content -->
+        <div class="content">
+          <h1 class="page-title">Student</h1>
+
+          <div class="stats-grid">
+            <!-- Student Profile Card -->
+            <div class="student-profile-card">
+              <div class="student-info">
+                <img
+                  src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200&h=200&fit=crop"
+                  alt="Jessia Rose"
+                  class="student-avatar"
+                />
+                <div class="student-details">
+                  <h2>Jessia Rose</h2>
+                  <div class="student-location">📍 Australia, House10</div>
+                  <p class="student-bio">
+                    Aliquam erat volutpat. Curabiene natis massa sedde lacu
+                    stiquen.
+                    <span style="cursor: pointer; text-decoration: underline"
+                      >More</span
+                    >
+                  </p>
+                </div>
+              </div>
+              <button class="view-profile-btn">View Full Profile</button>
+            </div>
+
+            <!-- Attendance Card -->
+            <div class="attendance-card">
+              <div class="attendance-header">
+                <h3 class="attendance-title">Attendance</h3>
+                <button class="menu-btn">⋮</button>
+              </div>
+              <div class="attendance-chart">
+                <div class="donut-chart">
+                  <svg viewBox="0 0 200 200">
+                    <circle
+                      cx="100"
+                      cy="100"
+                      r="80"
+                      fill="none"
+                      stroke="var(--orange)"
+                      stroke-width="30"
+                      stroke-dasharray="150.8 502.7"
+                      transform="rotate(-90 100 100)"
+                    />
+                    <circle
+                      cx="100"
+                      cy="100"
+                      r="80"
+                      fill="none"
+                      stroke="var(--primary-purple)"
+                      stroke-width="30"
+                      stroke-dasharray="351.9 502.7"
+                      stroke-dashoffset="-150.8"
+                      transform="rotate(-90 100 100)"
+                    />
+                  </svg>
+                  <div class="chart-center">
+                    <div class="chart-value">15000</div>
+                    <div class="chart-label">Students</div>
+                  </div>
+                </div>
+              </div>
+              <div class="attendance-legend">
+                <div class="legend-item">
+                  <span class="legend-dot purple"></span>
+                  <span>Present</span>
+                  <strong>70%</strong>
+                </div>
+                <div class="legend-item">
+                  <span class="legend-dot orange"></span>
+                  <span>Absent</span>
+                  <strong>30%</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Stats Cards -->
+          <div class="stats-cards">
+            <div class="stat-card">
+              <div class="stat-icon purple">📅</div>
+              <div class="stat-value">12</div>
+              <div class="stat-label">This Month</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-icon green">📅</div>
+              <div class="stat-value">16</div>
+              <div class="stat-label">Averaged</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-icon blue">📊</div>
+              <div class="stat-value">95%</div>
+              <div class="stat-label">Monthly</div>
+            </div>
+          </div>
+
+          <!-- Info Cards -->
+          <div class="info-cards">
+            <div class="info-card">
+              <h4 class="info-card-title">Notification</h4>
+              <p class="info-card-text">
+                Your school activities are stored in. Please Check it.
+              </p>
+            </div>
+            <div class="info-card">
+              <h4 class="info-card-title">Events</h4>
+              <p class="info-card-text">Your school is arranged many events.</p>
+            </div>
+            <div class="info-card">
+              <h4 class="info-card-title">Attendance</h4>
+              <p class="info-card-text">
+                Here is your attendance ratio in this month.
+              </p>
+            </div>
+          </div>
+
+          <!-- Exam Results Table -->
+          <div class="exam-results">
+            <div class="exam-results-header">
+              <h3 class="exam-results-title">All Exam Results</h3>
+              <input
+                type="text"
+                class="search-input"
+                placeholder="Search by name or roll"
+              />
+            </div>
+
+            <table class="results-table">
+              <thead>
+                <tr>
+                  <th><div class="checkbox"></div></th>
+                  <th>Exam Name</th>
+                  <th>Student ID</th>
+                  <th>Class</th>
+                  <th>Subject</th>
+                  <th>Grade</th>
+                  <th>Date</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><div class="checkbox"></div></td>
+                  <td>Class Test</td>
+                  <td>PRE43178</td>
+                  <td>9-10</td>
+                  <td>English</td>
+                  <td><span class="grade-badge">A+</span></td>
+                  <td>22/2/19</td>
+                  <td>
+                    <div class="action-btns">
+                      <button class="action-btn">🗑️</button>
+                      <button class="action-btn">✏️</button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td><div class="checkbox checked"></div></td>
+                  <td>Class Test</td>
+                  <td>PRE43178</td>
+                  <td>9-10</td>
+                  <td>Chemistry</td>
+                  <td><span class="grade-badge">A+</span></td>
+                  <td>22/2/19</td>
+                  <td>
+                    <div class="action-btns">
+                      <button class="action-btn">🗑️</button>
+                      <button class="action-btn">✏️</button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td><div class="checkbox"></div></td>
+                  <td>Class Test</td>
+                  <td>PRE43178</td>
+                  <td>9-10</td>
+                  <td>Biology</td>
+                  <td><span class="grade-badge">A+</span></td>
+                  <td>22/2/19</td>
+                  <td>
+                    <div class="action-btns">
+                      <button class="action-btn">🗑️</button>
+                      <button class="action-btn">✏️</button>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
