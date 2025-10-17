@@ -247,7 +247,7 @@ body.no-scroll {
 }
 
 .menu-toggle-btn svg {
-  color: var(--text-primary);
+  color: var(--dark-purple);
 }
 
 .search-bar {
@@ -898,7 +898,6 @@ svg {
   .sidebar {
     transform: translateX(-100%);
     z-index: 200;
-    /* We'll need JS to toggle this class */
   }
   .sidebar.active {
     transform: translateX(0);
@@ -924,7 +923,6 @@ svg {
   .sidebar {
     transform: translateX(-100%);
     z-index: 200;
-    /* We'll need JS to toggle this class */
   }
 
   .main-content {
